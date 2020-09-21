@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let b = 1;
+    let sum = 0;
+    let num = +prompt("Nhap vao day so luong")
+    for(let i = 2; i < num; i++) {
+       let nextNum = a + b
+        sum = sum + nextNum
+        a = b;
+        b = nextNum;
+    }
+    document.write(sum)
+</script>
+</body>
+</html>

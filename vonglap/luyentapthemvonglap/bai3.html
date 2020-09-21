@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let b = 1;
+    let str = "0 , 1 ,";
+    let num = +prompt("Nhap vao day so luong")
+    for (i = 2; i < num; i++) {
+        nextNum = a + b;
+        str = str + nextNum + " ,";
+        a = b;
+        b = nextNum;
+    }
+    document.write(str)
+</script>
+</body>
+</html>
